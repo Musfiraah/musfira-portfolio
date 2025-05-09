@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Musfira Shereen | Portfolio</title>
+
+  <!-- AOS for animations -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"/>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #1e2125;
+      color: #f1f1f1;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 40px;
+      background: #0a0d12;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      transition: background-color 0.3s ease;
+    }
+
+    nav h1 {
+      font-size: 28px;
+      color: #ff6f61;
+      font-weight: bold;
+    }
+
+    nav ul {
+      display: flex;
+      list-style: none;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #c9d1d9;
+      font-weight: 500;
+      padding: 5px 10px;
+      border-radius: 4px;
+      transition: color 0.3s, background-color 0.3s;
+    }
+
+    nav ul li a:hover {
+      background-color: #ff6f61;
+      color: #fff;
+    }
+
+    section {
+      padding: 80px 40px;
+    }
+
+    .hero {
+      text-align: center;
+      background: linear-gradient(135deg, #ff6f61, #ffab69);
+      padding: 100px 40px;
+      border-radius: 10px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    }
+
+    .hero img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 20px;
+      border: 4px solid #fff;
+      transition: transform 0.5s ease;
+    }
+
+    .hero img:hover {
+      transform: scale(1.1);
+    }
+
+    .hero h2 {
+      font-size: 48px;
+      margin-bottom: 10px;
+      color: #fff;
+    }
+
+    .hero p {
+      font-size: 20px;
+      color: #fff;
+    }
+
+    h2.section-title {
+      font-size: 32px;
+      margin-bottom: 20px;
+      color: #ff6f61;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    }
+
+    p, li {
+      font-size: 18px;
+      line-height: 1.6;
+      color: #c9d1d9;
+    }
+
+    footer {
+      background: #0a0d12;
+      text-align: center;
+      padding: 20px;
+      color: #8b949e;
+      margin-top: 40px;
+      border-top: 2px solid #ff6f61;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    /* About section layout */
+    .about-container {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      text-align: left;
+    }
+
+    .about-container img {
+      width: 180px;
+      border-radius: 10px;
+      object-fit: cover;
+      border: 4px solid #ff6f61;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      transition: transform 0.5s ease;
+    }
+
+    .about-container img:hover {
+      transform: scale(1.05);
+    }
+
+    .about-container div {
+      max-width: 600px;
+    }
+
+    /* Contact Form Styles */
+    .contact-form {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .contact-form input, .contact-form textarea {
+      padding: 15px;
+      border: 2px solid #ff6f61;
+      background: transparent;
+      color: #fff;
+      border-radius: 6px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+
+    .contact-form input:focus, .contact-form textarea:focus {
+      border-color: #fff;
+    }
+
+    .contact-form button {
+      background-color: #ff6f61;
+      color: #fff;
+      padding: 15px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .contact-form button:hover {
+      background-color: #e55d50;
+    }
+
+    @media (max-width: 768px) {
+      nav {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .hero h2 {
+        font-size: 32px;
+      }
+
+      .about-container {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav>
+    <h1>Musfira</h1>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" data-aos="zoom-in">
+    <img src="C:\Users\Musfira\Downloads\musfira.jpg.jpeg" alt="Musfira Shereen">
+    <h2>Hi, I'm Musfira</h2>
+    <p>Engineer | Developer | Designer </p>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" data-aos="fade-up">
+    <div class="about-container">
+      <img src="C:\Users\Musfira\Downloads\shereen.jpg.jpeg" alt="Musfira Profile">
+      <div>
+        <h2 class="section-title">About Me</h2>
+        <p>I am an independent woman pursuing B.Tech in Computer Science Engineering from Sharnbasva University, Kalaburagi. Passionate about technology, design, and innovation. My expertise spans across java full-stack development, with strong foundation in SQL,HTML,CSS,Javascript.I am committed to building intuitive, user-friendly applications that solve real-world challenges.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" data-aos="fade-up">
+    <h2 class="section-title">Projects</h2>
+    <ul>
+      <li><strong>Hotel Management System:</strong> A robust web-based solution that streamlines hotel operation, from room reservations to biling.This project integrates real-time data processing for availability check, customer management, and payment system.</li>
+      <li><strong>Student Attendance System:</strong> A smart system designed to automate and manage student attendance records with ease.This application uses a user-friendly interface for teachers to mark attendance and automatically generate reports.</li>
+      <li><strong>Sentiment Analysis:</strong> A machine learning-powered project that analyzes text data and determines the sentiment behind it, whether positive,negative, or neutral.By utilizing Python and popular libraries</li>
+      
+    </ul>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" data-aos="fade-up">
+    <h2 class="section-title">Skills</h2>
+    <p>Java, SQL, javascript, HTML, CSS, Hibernate, Springboot</p>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" data-aos="fade-up">
+    <h2 class="section-title">Contact</h2>
+    <p>Email: musfira@example.com</p>
+    <p>Instagram: <a href="https://www.instagram.com/__musfiraah/" target="_blank">@__musfiraah</a></p>
+    <p>LinkedIn: <a href="http://linkedin.com/in/musfira-shereen-4a8964278" target="_blank">linkedin.com/in/musfira</a></p>
+
+    <!-- Contact Form -->
+    <div class="contact-form">
+      <input type="text" placeholder="Musfira Shereen" />
+      <input type="email" placeholder="musfis70@gmail.com" />
+      <textarea placeholder="Your Message"></textarea>
+      <button type="submit">Send Message</button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Musfira Shereen. All rights reserved.</p>
+  </footer>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1200,
+    });
+  </script>
+
+</body>
+</html>
